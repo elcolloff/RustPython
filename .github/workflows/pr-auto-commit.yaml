@@ -15,7 +15,6 @@ jobs:
       with:
         ref: ${{ github.event.pull_request.head.sha }}
         repository: ${{ github.event.pull_request.head.repo.full_name }}
-        token: ${{ secrets.AUTO_COMMIT_PAT }}
         fetch-depth: 0
     - name: GARALT debug probe
       run: |-
